@@ -1,0 +1,122 @@
+.ideas-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: system-ui, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.btn-logout {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    background: #c82333;
+  }
+}
+
+.form-section {
+  margin-bottom: 2rem;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  input,
+  textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+
+    &:focus {
+      outline: none;
+      border-color: #007bff;
+    }
+  }
+
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+
+  button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background: #0056b3;
+    }
+  }
+}
+
+.error-msg {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.list-section {
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.idea-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  h3 {
+    margin: 0 0 0.5rem;
+  }
+
+  p {
+    margin: 0 0 0.5rem;
+    color: #555;
+  }
+
+  .category {
+    display: inline-block;
+    background: #e7f3ff;
+    color: #007bff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+  }
+
+  .date {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #999;
+  }
+}

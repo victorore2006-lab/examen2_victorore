@@ -1,0 +1,21 @@
+<div class="login">
+  <h1>Registro</h1>
+  <div class="email">
+    <div class="name">
+      <h2>Nombre Completo</h2>
+      <input type="text" placeholder="Lionel Messi" [(ngModel)]="fullName" />
+    </div>
+    <h2>Correo Electronico</h2>
+    <input type="email" placeholder="messi@thegoat.com" [(ngModel)]="email" />
+  </div>
+  <div class="password">
+    <h2>Contraseña</h2>
+    <input type="password" placeholder="*****" [(ngModel)]="password" />
+  </div>
+
+  <p>{{ message }}</p>
+  <div class="botones">
+    <button (click)="register()">Crear Cuenta</button>
+    <button routerLink="/login">Ir a Login</button>
+  </div>
+</div>

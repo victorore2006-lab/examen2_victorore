@@ -1,0 +1,29 @@
+<div class="ideas-page">
+  <header>
+    <h1>Mis Ideas</h1>
+    <button class="btn-logout" (click)="onLogout()">Cerrar Sesión</button>
+  </header>
+
+  <section class="form-section">
+    <h2>Nueva Idea</h2>
+    <div class="form">
+      <input type="text" placeholder="Título" [(ngModel)]="title" />
+      <textarea placeholder="Descripción" [(ngModel)]="description"></textarea>
+      <input type="text" placeholder="Categoría" [(ngModel)]="category" />
+      <button (click)="onCreateIdea()">Crear Idea</button>
+    </div>
+  </section>
+
+  <p *ngIf="errorMessage" class="error-msg">{{ errorMessage }}</p>
+
+  <section class="list-section">
+    <h2>Lista de Ideas</h2>
+    <div class="idea-card" *ngFor="let idea of ideas">
+      <h3>{{ idea.title }}</h3>
+      <p>{{ idea.description }}</p>
+      <span class="category">{{ idea.category }}</span>
+      <span class="date">{{ idea.createdAt | date:'short' }}</span>
+    </div>
+    <p *ngIf="ideas.length === 0">No tenés ideas todavía. ¡Creá una!</p>
+  </section>
+</div>

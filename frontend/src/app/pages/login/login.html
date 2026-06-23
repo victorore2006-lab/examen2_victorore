@@ -1,0 +1,17 @@
+<div class="login">
+  <h1>Login</h1>
+  <div class="email">
+    <h2>Correo Electronico</h2>
+    <input type="email" placeholder="messi@thegoat.com" [(ngModel)]="email" />
+  </div>
+  <div class="password">
+    <h2>Contraseña</h2>
+    <input type="password" placeholder="*****" [(ngModel)]="password" />
+  </div>
+
+  <p>{{ message }}</p>
+  <div class="botones">
+    <button (click)="onLogin()">Iniciar Sesion</button>
+    <button routerLink="/register">Ir a Register</button>
+  </div>
+</div>
